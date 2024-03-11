@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# Stripe Payment Gateway
+
+[Live](https://stripe-payment-gateway-client.vercel.app/).
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+# Backend Api
+[At Github](https://github.com/sau45/stripe_payment_gateway_server.git)
 
 ## Available Scripts
 
