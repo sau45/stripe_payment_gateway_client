@@ -6,6 +6,8 @@ import toast from 'react-hot-toast';
 import {loadStripe} from '@stripe/stripe-js';
 
 
+
+
 const CartDetails = () => {
 
     const {carts} = useSelector((state)=>state.allCart);
@@ -76,7 +78,8 @@ const CartDetails = () => {
         const headers = {
             "Content-Type":"application/json"
         }
-        const response = await fetch("http://localhost:7000/api/create-checkout-session",{
+        console.log(process.env.REACT_APP_SERVER_URL)
+        const response = await fetch(`${process.env.REACT_APP_SERVER_URL}/api/create-checkout-session`,{
             method:"POST",
             headers:headers,
             body:JSON.stringify(body)
